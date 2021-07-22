@@ -10,7 +10,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    background: url(images/alvord.jpg) no-repeat center fixed;
+    background: url(images/alvord3.jpg) no-repeat center fixed;
     background-size: cover;
     overflow-x: hidden;
 }
@@ -66,6 +66,27 @@ main div {
     width: 70%;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+}
+
+main div h1 {
+    margin-bottom: 15px;
+}
+
+main div table {
+    width: 100%;
+    margin: 25px 0;
+    border-spacing: 0;
+}
+
+main div table td {
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+main div table th {
+    padding: 10px;
 }
 
 main div details {
