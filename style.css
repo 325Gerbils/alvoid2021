@@ -1,185 +1,200 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    background: #000;
-    background: url(images/alvord3.jpg) no-repeat center;
-    background-size: cover;
-    overflow-x: hidden;
-}
-
-header h1 {
-    text-align: center;
-    font-size: 7em;
-    color: #000;
-    text-shadow: 0 0 5px #fff;
-}
-
-header h1 span {
-    font-size: 0.6em;
-}
-
-header button {
-    padding: 15px 25px;
-    border: 2px solid white;
-    border-radius: 50px;
-    font-size: 1.5em;
-    background: none;
-    color: #fff;
-    transition: background-color 0.2s;
-}
-
-header button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-header p {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.5em;
-    color: #ccc;
-    font-family: 'Open Sans', sans-serif;
-}
-
-header p a {
-    color: #eee;
-}
-
-.scrollbtn {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background: #fff;
-    border: none;
-    border-radius: 50%;
-}
-
-main {
-    padding: 50px;
-}
-
-main div {
-    width: 70%;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-}
-
-main div h1 {
-    margin-bottom: 15px;
-}
-
-main div table {
-    width: 100%;
-    margin: 25px 0;
-    border-spacing: 0;
-}
-
-main div table td {
-    padding: 10px;
-    font-size: 1.2em;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-main div table th {
-    padding: 10px;
-}
-
-main div details {
-    padding: 25px 0;
-}
-
-main div details summary {
-    font-size: 1.5em;
-    padding: 15px 0;
-}
-
-main div details p {
-    font-size: 1.2em;
-}
-
-main div details p label {
-    line-height: 1.5em;
-    text-indent: -10px;
-}
-
-main div details p label input {
-    margin: 0 15px;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
-}
-
-main div details button {
-    display: inline-block;
-    padding: 8px 15px;
-    border: 1px solid blue;
-    background: #fff;
-    color: blue;
-    font-size: 1.2em;
-    border-radius: 5px;
-}
-
-main div details button:hover,
-main div details button:active {
-    background-color: rgba(0, 0, 255, 0.3);
-}
-
-main div section {
-    padding: 25px 0;
-}
-
-footer {
-    background: #000;
-    padding: 25px 50px;
-}
-
-footer p {
-    color: #fff;
-}
-
-footer p a {
-    color: #fff;
-}
-
-@media screen and (max-width: 750px) {
-    header h1 {
-        font-size: 4em;
-        text-align: center;
-    }
-    header h1 span {
-        display: block;
-        font-size: 0.5em;
-    }
-    header p {
-        font-size: 1.2em;
-    }
-    main {
-        padding: 25px;
-    }
-    main div {
-        width: 100%;
-    }
-    main div details {
+    * {
+        margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
-    main div details button {
+    
+    header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background: #000;
+        background: url(images/alvord3.jpg) no-repeat center;
+        background-size: cover;
+        overflow-x: hidden;
+    }
+    
+    header h1 {
+        text-align: center;
+        font-size: 7em;
+        color: #000;
+        text-shadow: 0 0 5px #fff;
+    }
+    
+    header h1 span {
+        font-size: 0.6em;
+    }
+    
+    header button {
+        padding: 15px 25px;
+        border: 2px solid white;
+        border-radius: 50px;
+        font-size: 1.5em;
+        background: none;
+        color: #fff;
+        transition: background-color 0.2s;
+        cursor: pointer;
+    }
+    
+    header button:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    header p {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+        color: #ccc;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    header p a {
+        color: #eee;
+    }
+    
+    .scrollbtn {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: #fff;
+        border: none;
+        border-radius: 50%;
+    }
+    
+    main {
+        padding: 50px;
+    }
+    
+    main div {
+        width: 70%;
+        margin: 0 auto;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    main div h1 {
+        margin-bottom: 15px;
+    }
+    
+    main div table {
         width: 100%;
-        margin: 5px 0;
+        margin: 25px 0;
+        border-spacing: 0;
     }
-    main div section {
+    
+    main div table td {
+        padding: 10px;
+        font-size: 1.2em;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    
+    main div table th {
+        padding: 10px;
+    }
+    
+    main div details {
+        padding: 25px 0;
+    }
+    
+    main div details summary {
+        font-size: 1.5em;
         padding: 15px 0;
     }
-    footer {
-        padding: 25px;
+    
+    main div details p {
+        font-size: 1.2em;
     }
-}
+    
+    main div details p label {
+        line-height: 1.5em;
+        text-indent: -10px;
+    }
+    
+    main div details p label input {
+        margin: 0 15px;
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+    }
+    
+    main div details button {
+        display: inline-block;
+        padding: 8px 15px;
+        border: 1px solid blue;
+        background: #fff;
+        color: blue;
+        font-size: 1.2em;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px 3px;
+    }
+    
+    main div details button:hover,
+    main div details button:active {
+        background-color: rgba(0, 0, 255, 0.3);
+    }
+    
+    main div section {
+        padding: 25px 0;
+    }
+    
+    footer {
+        background: #000;
+        padding: 25px 50px;
+    }
+    
+    footer p {
+        color: #fff;
+    }
+    
+    footer p a {
+        color: #fff;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        header h1 {
+            font-size: 5em;
+            text-align: center;
+        }
+        header h1 span {
+            font-size: 0.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        header button {
+            font-size: 1.25em;
+        }
+    }
+    
+    @media screen and (max-width: 750px) {
+        header h1 {
+            font-size: 4em;
+            text-align: center;
+        }
+        header h1 span {
+            display: block;
+        }
+        main {
+            padding: 25px;
+        }
+        main div {
+            width: 100%;
+        }
+        main div details {
+            padding: 0;
+        }
+        main div details button {
+            width: 100%;
+            margin: 5px 0;
+        }
+        main div section {
+            padding: 15px 0;
+        }
+        footer {
+            padding: 25px;
+        }
+    }
