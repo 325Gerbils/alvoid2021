@@ -10,6 +10,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    background: #000;
     background: url(images/alvord3.jpg) no-repeat center;
     background-size: cover;
     overflow-x: hidden;
