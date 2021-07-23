@@ -32,15 +32,23 @@ header h1 span {
     font-size: 0.6em;
 }
 
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 header button {
-    padding: 15px 25px;
+    padding: 10px 25px;
     border: 2px solid white;
-    border-radius: 50px;
+    border-radius: 25px;
     font-size: 1.5em;
     background: none;
     color: #fff;
     transition: background-color 0.2s;
     cursor: pointer;
+    margin: 10px;
 }
 
 header button:hover {
@@ -209,6 +217,9 @@ footer p a {
     }
     header p {
         width: 90%;
+    }
+    header div {
+        flex-direction: column;
     }
     main {
         padding: 25px;
