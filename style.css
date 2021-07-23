@@ -78,6 +78,19 @@
         margin-bottom: 15px;
     }
     
+    main div .images {
+        margin: 15px 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 15px;
+    }
+    
+    main div .images img {
+        width: 100%;
+        height: auto;
+    }
+    
     main div table {
         width: 100%;
         margin: 25px 0;
@@ -187,6 +200,9 @@
         }
         main div {
             width: 100%;
+        }
+        main div .images {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
         main div details {
             padding: 0;
