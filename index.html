@@ -46,27 +46,28 @@
             </details>
             <details open>
                 <summary>What should I bring?</summary>
-                <p><label><input type="checkbox" id="c1">Yourself</label></p>
-                <p><label><input type="checkbox" id="c2">A good attitude</label></p>
-                <p><label><input type="checkbox" id="c3">Sleeping situation ( tent, car, pad, blankets, sleeping bag, pillow, ETC..)</label></p>
-                <p><label><input type="checkbox" id="c4">Water ( enough for you and all you are coming with for the length of the festival)</label></p>
-                <p><label><input type="checkbox" id="c5">Food ( DITTO)</label></p>
-                <p><label><input type="checkbox" id="c6">Toiletries Clothes ( remember it gets down to 30 at night)</label></p>
-                <p><label><input type="checkbox" id="c7">Trash bags Wet wipes ( for bathing, unless you want to pay a lot of money to use the hot springs on the other side of the desert, there won't be a way to bathe. Wet wipes work wonders.)</label></p>
-                <p><label><input type="checkbox" id="c8">Dust mask</label></p>
-                <p><label><input type="checkbox" id="c9">goggles</label></p>
-                <p><label><input type="checkbox" id="c10">Costumes</label></p>
-                <p><label><input type="checkbox" id="c11">Lights</label></p>
-                <p><label><input type="checkbox" id="c12">Art</label></p>
-                <p><label><input type="checkbox" id="c13">Gifts</label></p>
-                <p><label><input type="checkbox" id="c14">A form of transport ( bike, longboard, onewheel, ETC…) cars can be used to)</label></p>
-                <p><label><input type="checkbox" id="c15">Whatever you think will be fun!</label></p>
+                <p>This page will remember what boxes you've checked, so you can use this page as an interactive packing list! It won't work in incognito, or if you clear local storage.</p><br>
+                <p><label><input type="checkbox">Yourself</label></p>
+                <p><label><input type="checkbox">A good attitude</label></p>
+                <p><label><input type="checkbox">Sleeping situation ( tent, car, pad, blankets, sleeping bag, pillow, ETC..)</label></p>
+                <p><label><input type="checkbox">Water ( enough for you and all you are coming with for the length of the festival)</label></p>
+                <p><label><input type="checkbox">Food ( DITTO)</label></p>
+                <p><label><input type="checkbox">Toiletries Clothes ( remember it gets down to 30 at night)</label></p>
+                <p><label><input type="checkbox">Trash bags Wet wipes ( for bathing, unless you want to pay a lot of money to use the hot springs on the other side of the desert, there won't be a way to bathe. Wet wipes work wonders.)</label></p>
+                <p><label><input type="checkbox">Dust mask</label></p>
+                <p><label><input type="checkbox">goggles</label></p>
+                <p><label><input type="checkbox">Costumes</label></p>
+                <p><label><input type="checkbox">Lights</label></p>
+                <p><label><input type="checkbox">Art</label></p>
+                <p><label><input type="checkbox">Gifts</label></p>
+                <p><label><input type="checkbox">A form of transport ( bike, longboard, onewheel, ETC…) cars can be used to)</label></p>
+                <p><label><input type="checkbox">Whatever you think will be fun!</label></p>
                 <script>
-                    checkboxes = document.querySelectorAll('input[type="checkbox"]')
-                    checkboxes.forEach((checkbox) => {
+                    document.querySelectorAll('input[type="checkbox"]').forEach((checkbox, i) => {
+                        checkbox.id = "checkbox-" + i
                         checkbox.checked = localStorage.getItem(checkbox.id) == 'true'
-                        checkbox.addEventListener('change', function() {
-                            localStorage.setItem(this.id, this.checked)
+                        checkbox.addEventListener('change', () => {
+                            localStorage.setItem(checkbox.id, checkbox.checked)
                         })
                     })
                 </script>
