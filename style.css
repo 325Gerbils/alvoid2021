@@ -217,7 +217,7 @@ footer p a {
     }
     header p {
         width: 80%;
-        text-align: left;
+        /* text-align: left; */
     }
     header div {
         width: 80%;
