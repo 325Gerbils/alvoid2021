@@ -163,6 +163,7 @@
             font-size: 0.5em;
         }
         header p {
+            width: 80%;
             font-size: 1.2em;
         }
         header button {
@@ -177,6 +178,9 @@
         }
         header h1 span {
             display: block;
+        }
+        header p {
+            width: 90%;
         }
         main {
             padding: 25px;
