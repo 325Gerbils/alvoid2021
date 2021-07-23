@@ -92,6 +92,15 @@
                     <a href="https://burningman.org/culture/philosophical-center/10-principles/" target="_blank">Burning Man Rules</a>
                 </p>
             </details>
+            <script>
+                document.querySelectorAll('details').forEach((details, i) => {
+                    details.id = "details-" + i
+                    details.open = localStorage.getItem(details.id) == 'true' || localStorage.getItem(details.id) == null
+                    details.addEventListener('click', () => {
+                        localStorage.setItem(details.id, !details.open)
+                    })
+                })
+            </script>
             <br>
             <section>
                 <h2>Contact us at <a href="mailto:alvoidfestival@gmail.coml">alvoidfestival@gmail.com</a></h2>
