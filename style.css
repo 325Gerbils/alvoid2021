@@ -78,7 +78,7 @@
         margin-bottom: 15px;
     }
     
-    main div .images {
+    main div details .images {
         margin: 15px 0;
         width: 100%;
         display: grid;
@@ -86,8 +86,8 @@
         grid-gap: 15px;
     }
     
-    main div .images img {
-        width: 100%;
+    main div details .images img {
+        max-width: 100%;
         height: auto;
     }
     
@@ -201,9 +201,6 @@
         main div {
             width: 100%;
         }
-        main div .images {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
         main div details {
             padding: 0;
             margin-bottom: 10px;
@@ -211,6 +208,9 @@
         main div details button {
             width: 100%;
             margin: 5px 0;
+        }
+        main div details .images {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
         main div section {
             padding: 15px 0;
