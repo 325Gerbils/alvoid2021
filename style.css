@@ -216,10 +216,15 @@ footer p a {
         display: block;
     }
     header p {
-        width: 90%;
+        width: 80%;
+        text-align: left;
     }
     header div {
+        width: 80%;
         flex-direction: column;
+    }
+    header button {
+        width: 100%;
     }
     main {
         padding: 25px;
