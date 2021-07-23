@@ -190,6 +190,7 @@
         }
         main div details {
             padding: 0;
+            margin-bottom: 10px;
         }
         main div details button {
             width: 100%;
