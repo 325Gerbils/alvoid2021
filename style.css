@@ -1,5 +1,4 @@
-/* preload alvord3.jpg with css */
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +25,7 @@ header h1 {
     font-size: 7em;
     color: #000;
     text-shadow: 0 0 5px #fff;
+    font-family: 'Source Code Pro', monospace;
 }
 
 header h1 span {
@@ -168,8 +168,7 @@ main div details button {
     margin: 5px 3px;
 }
 
-main div details button:hover,
-main div details button:active {
+main div details button:hover, main div details button:active {
     background-color: rgba(0, 0, 255, 0.3);
 }
 
