@@ -23,7 +23,7 @@ header {
 
 header h1 {
     text-align: center;
-    font-size: 7em;
+    font-size: 7rem;
     /* color: #000; */
     text-shadow: 0 1px 1px #888;
     color: #fff;
@@ -31,7 +31,7 @@ header h1 {
 }
 
 header h1 span {
-    font-size: 0.5em;
+    font-size: 0.5rem;
 }
 
 header div {
@@ -45,7 +45,7 @@ header button {
     padding: 10px 25px;
     border: 2px solid white;
     border-radius: 25px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     background: none;
     color: #fff;
     transition: background-color 0.2s;
@@ -61,7 +61,7 @@ header p {
     width: 70%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #ccc;
     font-family: 'Open Sans', sans-serif;
 }
@@ -91,7 +91,7 @@ main div {
 }
 
 main div p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 main div h1 {
@@ -128,7 +128,7 @@ main div table {
 
 main div table td {
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-align: center;
     border: 1px solid #ccc;
 }
@@ -142,16 +142,16 @@ main div details {
 }
 
 main div details summary {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 10px 0;
 }
 
 main div details p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 main div details p label {
-    line-height: 1.5em;
+    line-height: 1.5rem;
     text-indent: -10px;
 }
 
@@ -168,7 +168,7 @@ main div details button {
     border: 1px solid blue;
     background: #fff;
     color: blue;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     border-radius: 5px;
     cursor: pointer;
     margin: 5px 3px;
@@ -181,6 +181,8 @@ main div details button:hover, main div details button:active {
 main div section {
     padding: 25px 0;
 }
+
+main div section p input {}
 
 footer {
     background: #000;
@@ -197,24 +199,24 @@ footer p a {
 
 @media screen and (max-width: 1000px) {
     header h1 {
-        font-size: 5em;
+        font-size: 5rem;
         text-align: center;
     }
     header h1 span {
-        font-size: 0.5em;
+        font-size: 0.5rem;
     }
     header p {
         width: 80%;
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
     header button {
-        font-size: 1.25em;
+        font-size: 1.25rem;
     }
 }
 
 @media screen and (max-width: 750px) {
     header h1 {
-        font-size: 4em;
+        font-size: 4rem;
         text-align: center;
     }
     header h1 span {
