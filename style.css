@@ -182,14 +182,6 @@ main div section {
     padding: 25px 0;
 }
 
-select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.2em;
-}
-
 footer {
     background: #000;
     padding: 25px 50px;
