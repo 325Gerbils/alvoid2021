@@ -127,6 +127,7 @@ main details div.artists iframe {
 }
 
 main details div.artists {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 15px;
