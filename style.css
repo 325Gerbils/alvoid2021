@@ -138,10 +138,6 @@ main details div.artists div {
     width: 100%;
 }
 
-main details div.artists div p {
-    font-size: 0.9em;
-}
-
 main details div.artists div p span {
     white-space: nowrap;
 }
