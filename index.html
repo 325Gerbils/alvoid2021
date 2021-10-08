@@ -216,30 +216,19 @@
             </script>
             <br>   
             <section class="survey">
-                <p class="hidden question" id="name">What is your name? &nbsp;&nbsp;
-                    <input type="text" placeholder="Joseph McDiggerson" onchange="">
-                </p>
-                <p class="hidden question" id="otherpeople">How many other people are you bringing? &nbsp;&nbsp;
-                    <input type="number" value="0" onchange="">
-                </p>
-
                 <table>
                     <tr class="question">
                         <td>Are you attending Alvoid?</td>
                         <td><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); survey.attending = 'no'">No.</button></td>
                     </tr>
-                    <tr class="hidden" id="goodbye">Oh well. We hope to see you next year!</tr>
-                    <tr class="question">
-                        <td>Are you attending Alvoid?</td>
-                        <td><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); survey.attending = 'no'">No.</button></td>
+                    <tr class="hidden question" id="goodbye">Oh well. We hope to see you next year!</tr>
+                    <tr class="hidden question" id="name">
+                        <td>What is your name?</td>
+                        <td><input type="text" placeholder="Joseph McDiggerson" onchange=""></td>
                     </tr>
-                    <tr class="question">
-                        <td>Are you attending Alvoid?</td>
-                        <td><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); survey.attending = 'no'">No.</button></td>
-                    </tr>
-                    <tr class="question">
-                        <td>Are you attending Alvoid?</td>
-                        <td><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); survey.attending = 'no'">No.</button></td>
+                    <tr class="hidden question" id="otherpeople">
+                        <td>How many other people are you bringing?</td>
+                        <td><input type="number" value="0" onchange=""></td>
                     </tr>
                 </table>
 
