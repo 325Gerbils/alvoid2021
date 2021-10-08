@@ -168,10 +168,6 @@ main div table td {
     /* border: 1px solid #ccc; */
 }
 
-main div table td:last-child {
-    width: 33%;
-}
-
 main div table th {
     padding: 10px;
 }
