@@ -120,7 +120,7 @@ main div details iframe {
     height: 500px;
 }
 
-main div details p iframe {
+main details div.artists iframe {
     width: 100%;
     height: 250px;
 }
