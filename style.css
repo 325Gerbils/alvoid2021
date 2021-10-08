@@ -213,6 +213,14 @@ main div section {
     padding: 25px 0;
 }
 
+.survey {
+    background: rgba(0, 0, 255, 0.3);
+}
+
+.survey * {
+    border: 1px solid red;
+}
+
 footer {
     background: #000;
     padding: 25px 50px;
