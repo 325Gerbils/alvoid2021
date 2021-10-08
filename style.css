@@ -157,9 +157,10 @@ main div table {
     border-spacing: 0;
 }
 
-main div table tr {
-    margin-bottom: 10px;
-}
+/* main div table tr {
+    margin-bottom: 10px; */
+
+/* } */
 
 main div table td {
     padding: 10px;
