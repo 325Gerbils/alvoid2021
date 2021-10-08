@@ -228,6 +228,7 @@ input[type=text] {
     font-size: 1em;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
+    width: 100%;
 }
 
 .survey {
@@ -251,6 +252,7 @@ input[type=text] {
     color: blue;
     cursor: pointer;
     font-size: 1.1em;
+    width: 33%;
     transition: 0.2s background-color;
 }
 
@@ -293,6 +295,7 @@ input[type=number] {
     margin: 5px 3px;
     border: 1px solid blue;
     font-size: 1.1em;
+    width: 100%;
 }
 
 .hidden {
