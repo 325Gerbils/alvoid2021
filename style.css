@@ -242,6 +242,7 @@ input[type=text] {
     /* border-radius: 5px; */
     margin: 25px 0;
     font-size: 1.2em;
+    display: block;
 }
 
 .question button {
