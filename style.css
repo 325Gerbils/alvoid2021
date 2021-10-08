@@ -238,6 +238,17 @@ input[type=text] {
     font-size: 1.2em;
 }
 
+.question button {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid blue;
+    background: #fff;
+    color: blue;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .hidden {
     display: none;
 }
