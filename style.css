@@ -239,7 +239,7 @@ input[type=text] {
 
 .question button {
     display: inline-block;
-    padding: 8px 15px;
+    padding: 5px 10px;
     border: 1px solid blue;
     background: #fff;
     color: blue;
