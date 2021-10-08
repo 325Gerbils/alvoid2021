@@ -248,6 +248,16 @@ input[type=text] {
     margin-left: -1px;
 }
 
+.question button:first-child {
+    border-radius: 5px 0 0 5px;
+    margin-left: 0;
+}
+
+.question button:last-child {
+    border-radius: 0 5px 5px 0;
+    margin-left: -2px;
+}
+
 .hidden {
     display: none;
 }
