@@ -120,6 +120,11 @@ main div details iframe {
     height: 500px;
 }
 
+main div details p iframe {
+    width: 100%;
+    height: 250px;
+}
+
 main div table {
     width: 100%;
     margin: 25px 0;
