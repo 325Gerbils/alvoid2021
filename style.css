@@ -257,6 +257,7 @@ input[type=text] {
     border-radius: 5px 0 0 5px;
     border: 1px solid green;
     color: green;
+    z-index: 1;
 }
 
 .question button:nth-child(2):hover, .question button:nth-child(2):active {
@@ -265,12 +266,6 @@ input[type=text] {
 
 .question button:nth-child(3) {
     margin-left: -1px;
-    border: 1px solid gold;
-    color: gold;
-}
-
-.question button:nth-child(3):hover, .question button:nth-child(3):active {
-    background-color: rgba(255, 255, 0, 0.3);
 }
 
 .question button:last-child {
