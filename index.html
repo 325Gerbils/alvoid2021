@@ -200,13 +200,39 @@
                         localStorage.setItem(details.id, !details.open)
                     })
                 })
+                show = (selector) => {
+                    document.querySelectorAll(selector).forEach((element, i) => {
+                        element.classList.remove('hidden')
+                    })
+                }
+                hide = (selector) => {
+                    document.querySelectorAll(selector).forEach((element, i) => {
+                        element.classList.add('hidden')
+                    })
+                }
+                survey = {
+                    attending: "maybe",
+                }
             </script>
             <br>   
             <section class="survey">
-                <p class="question">Are you attending Alvoid? &nbsp;&nbsp; <button>Yes!</button><button>Maybe?</button><button>No.</button></p>
+                <p class="question">Are you attending Alvoid? &nbsp;&nbsp; 
+                    <button onclick="show('#name'); show('#otherpeople'); survey.attending = 'yes'">Yes!</button>
+                    <button onclick="show('#name'); show('#otherpeople'); survey.attending = 'maybe'">Maybe?</button>
+                    <button onclick="show('#goodbye'); hide('#otherpeople'); survey.attending = 'no'">No.</button>
+                </p>
+
+                <p class="hidden" id="goodbye">Oh well. We hope to see you next year!</p>
+                
+                <p class="hidden question" id="name">What is your name? &nbsp;&nbsp;
+                    <input type="text" onchange="">
+                </p>
+                <p class="hidden question" id="otherpeople">>How many other people are you bringing? &nbsp;&nbsp;
+                    <input type="text" onchange="">
+                </p>
+
                 <!-- <p class="hidden">&nbsp; -->
-                    <!-- <p>What is your name? </p>
-                    <input type="text"><div>If so, how many other people are you bringing?&nbsp;<input type="text"></div>
+                    <!-- <div>How many other people are you bringing?&nbsp;<input type="text"></div>
                     <div>Can you provide (or need) transportation?&nbsp;<input type="text"></div>
                     <div>&nbsp; &nbsp; If so, please leave your email:&nbsp;<input type="text">&nbsp;</div></p> -->
                 <!-- <p class="hidden">Or, are you considering attending? <input type="text"></p> -->
