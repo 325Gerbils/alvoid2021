@@ -227,7 +227,9 @@ input[type=text] {
 }
 
 .survey {
-    /* padding: 0 25px; */
+    padding: 25px;
+    border: 1px solid #888;
+    border-radius: 25px;
 }
 
 .survey .question {
