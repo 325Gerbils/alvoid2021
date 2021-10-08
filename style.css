@@ -273,7 +273,6 @@ input[type=text] {
     margin-left: -1px;
     border: 1px solid red;
     color: red;
-    z-index: 1;
     border-left-color: purple;
 }
 
