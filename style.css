@@ -158,6 +158,7 @@ main div table {
 }
 
 main div table tr {
+    display: block;
     margin-bottom: 10px;
 }
 
@@ -165,7 +166,7 @@ main div table td {
     /* padding: 10px; */
     font-size: 1.1em;
     text-align: left;
-    /* border: 1px solid #ccc; */
+    border: 1px solid #ccc;
 }
 
 main div table th {
@@ -228,7 +229,7 @@ input[type=text] {
     font-size: 1em;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
-    width: 98%;
+    width: 100%;
 }
 
 .survey {
@@ -296,7 +297,7 @@ input[type=number] {
     margin: 5px 3px;
     border: 1px solid blue;
     font-size: 1.1em;
-    width: 98%;
+    width: 100%;
 }
 
 .hidden {
