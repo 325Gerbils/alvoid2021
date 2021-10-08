@@ -213,8 +213,15 @@ main div section {
     padding: 25px 0;
 }
 
-.survey {
-    background: rgba(0, 0, 255, 0.3);
+.survey {}
+
+.survey .question {
+    padding: 25px;
+    margin: 25px;
+}
+
+.hidden {
+    display: none;
 }
 
 .survey * {
