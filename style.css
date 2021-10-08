@@ -125,6 +125,12 @@ main div details p iframe {
     height: 250px;
 }
 
+main details div.artists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 15px;
+}
+
 main div table {
     width: 100%;
     margin: 25px 0;
