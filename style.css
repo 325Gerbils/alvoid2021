@@ -213,19 +213,27 @@ main div section {
     padding: 25px 0;
 }
 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid blue;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .survey {}
 
 .survey .question {
-    padding: 25px;
-    margin: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 25px 0;
 }
 
 .hidden {
     display: none;
-}
-
-.survey * {
-    border: 1px solid red;
 }
 
 footer {
