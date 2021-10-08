@@ -138,6 +138,10 @@ main details div.artists div {
     width: 100%;
 }
 
+main details div.artists div p span {
+    white-space: nowrap;
+}
+
 img.icon {
     width: 24px;
     height: 24px;
