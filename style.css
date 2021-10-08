@@ -214,22 +214,23 @@ main div section {
 }
 
 input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px 3px;
     box-sizing: border-box;
-    border: 2px solid blue;
-    border-radius: 4px;
-    font-size: 1.2em;
+    border: 1px solid blue;
+    background: #fff;
+    border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .survey {}
 
 .survey .question {
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
     margin: 25px 0;
+    font-size: 1em;
 }
 
 .hidden {
