@@ -126,11 +126,12 @@ main details div.artists iframe {
 }
 
 main details div.artists {
+    font-size: 0.95em;
     width: 100%;
     margin: 15px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-gap: 15px;
+    grid-gap: 25px;
 }
 
 main details div.artists div {
