@@ -270,7 +270,7 @@ input[type=text] {
 
 .question button:last-child {
     border-radius: 0 5px 5px 0;
-    margin-left: -2px;
+    margin-left: -1px;
     border: 1px solid red;
     color: red;
     z-index: 1;
