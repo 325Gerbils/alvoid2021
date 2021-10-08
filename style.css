@@ -280,6 +280,13 @@ input[type=text] {
     background-color: rgba(255, 0, 0, 0.3);
 }
 
+input[type=number] {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px 3px;
+    border: 2px solid blue;
+}
+
 .hidden {
     display: none;
 }
