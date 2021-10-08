@@ -274,7 +274,7 @@ input[type=text] {
     /* margin-left: -2px; */
     border: 1px solid red;
     color: red;
-    border-right-color: purple;
+    border-left-color: purple;
 }
 
 .question button:last-child:hover, .question button:last-child:active {
