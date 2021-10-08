@@ -241,7 +241,7 @@ input[type=text] {
 }
 
 .survey .question {
-    /* border: 1px solid #ccc; */
+    border: 1px solid #ccc;
     /* border-radius: 5px; */
     margin: 25px 0;
     font-size: 1.2em;
