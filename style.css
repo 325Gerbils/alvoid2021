@@ -133,6 +133,10 @@ main details div.artists {
     grid-gap: 15px;
 }
 
+main details div.artists div {
+    width: 100%;
+}
+
 main div table {
     width: 100%;
     margin: 25px 0;
