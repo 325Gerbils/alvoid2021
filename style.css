@@ -265,13 +265,13 @@ input[type=text] {
 }
 
 .question button:nth-child(3) {
-    margin-left: -1px;
+    /* margin-left: -1px; */
     border-left-color: teal;
 }
 
 .question button:last-child {
     border-radius: 0 5px 5px 0;
-    margin-left: -2px;
+    /* margin-left: -2px; */
     border: 1px solid red;
     color: red;
     border-right-color: purple;
