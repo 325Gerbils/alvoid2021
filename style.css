@@ -166,7 +166,7 @@ main div table td {
     padding: 10px;
     font-size: 1.1em;
     text-align: left;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 
 main div table th {
