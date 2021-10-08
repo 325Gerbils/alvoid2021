@@ -228,7 +228,7 @@ input[type=text] {
 
 .survey {
     background: #fff;
-    padding: 15px;
+    padding: 0 25px;
 }
 
 .survey .question {
