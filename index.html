@@ -220,7 +220,9 @@
                     <tr class="question" id="attending">
                         <td width="60%">Are you attending Alvoid?</td>
                         <td width="40%">
-                            <button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); survey.attending = 'no'">No.</button>
+                            <button onclick="show('#name'); show('#otherpeople'); show('#perform'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button>
+                            <button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button>
+                            <button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); survey.attending = 'no'">No.</button>
                         </td>
                     </tr>
                     <tr class="hidden question" id="goodbye"><td colspan="2">Oh well. We hope to see you next year!</td></tr>
@@ -234,7 +236,23 @@
                     </tr>
                     <tr class="hidden question" id="perform">
                         <td>Do you want to/ are you going to perform?</td>
-                        <td><button onclick="">Yes!</button><button onclick="">No.</button></td>
+                        <td><button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials'); hide('#goodbye');">Yes!</button><button onclick="">No.</button></td>
+                    </tr>
+                    <tr class="hidden question" id="artistname">
+                        <td>What is your artist's name?</td>
+                        <td><input type="text" placeholder="100 gecs" onchange=""></td>
+                    </tr>
+                    <tr class="hidden question" id="from">
+                        <td>Where are you from?</td>
+                        <td><input type="text" placeholder="Portland, OR" onchange=""></td>
+                    </tr>
+                    <tr class="hidden question" id="describemusic">
+                        <td>How would you describe your music?</td>
+                        <td><input type="text" placeholder="A symphonic clusterfuck" onchange=""></td>
+                    </tr>
+                    <tr class="hidden question" id="socials">
+                        <td>Please link your socials and streaming platforms:</td>
+                        <td><input type="text" placeholder="please link as many as you like" onchange=""></td>
                     </tr>
                 </table>
 
