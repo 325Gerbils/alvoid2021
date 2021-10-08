@@ -246,7 +246,6 @@ input[type=text] {
     cursor: pointer;
     font-size: 1.1em;
     transition: 0.2s background-color;
-    margin: 0;
 }
 
 .question button:hover, .question button:active {

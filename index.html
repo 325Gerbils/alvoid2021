@@ -216,10 +216,7 @@
             </script>
             <br>   
             <section class="survey">
-                <p class="question">Are you attending Alvoid? &nbsp;&nbsp; 
-                    <button onclick="show('#name'); show('#otherpeople'); hide('goodbye'); survey.attending = 'yes'">Yes!</button>
-                    <button onclick="show('#name'); show('#otherpeople'); hide('goodbye'); survey.attending = 'maybe'">Maybe?</button>
-                    <button onclick="show('#goodbye'); hide('#otherpeople'); hide('name'); survey.attending = 'no'">No.</button>
+                <p class="question">Are you attending Alvoid? &nbsp;&nbsp;<button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); survey.attending = 'no'">No.</button>
                 </p>
 
                 <p class="hidden" id="goodbye">Oh well. We hope to see you next year!</p>
