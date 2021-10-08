@@ -226,7 +226,9 @@ input[type=text] {
     font-family: 'Open Sans', sans-serif;
 }
 
-.survey {}
+.survey {
+    background: #fff;
+}
 
 .survey .question {
     /* border: 1px solid #ccc; */
