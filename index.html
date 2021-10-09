@@ -20,7 +20,7 @@
         <p>Around 70 people are planning on going to Alvoid this year!</p>
         <br>
         <div>
-            <button onclick="window.location.href='https://www.surveymonkey.com/r/8LRD3BZ'">I would like to
+            <button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials'); document.querySelector('.survey').scrollIntoView()">I would like to
                 attend!</button>
             <!-- <button onclick="window.location.href='artists.html'">See artists and sets</button> -->
         </div>
@@ -233,7 +233,7 @@
                     </tr>
                     <tr class="hidden question" id="perform">
                         <td>Do you want to/ are you going to perform?</td>
-                        <td><button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials'); hide('#goodbye');">Yes!</button><button onclick="">No.</button></td>
+                        <td><button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials');">Yes!</button><button onclick="hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials');">No.</button></td>
                     </tr>
                     <tr class="hidden question" id="artistname">
                         <td>What is your artist's name?</td>
