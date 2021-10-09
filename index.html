@@ -216,42 +216,41 @@
             </script>
             <br>   
             <section class="survey">
-                <table>
-                    <div class="question" id="attending">
-                        <div width="60%">Are you attending Alvoid?</div>
-                        <div width="40%" STYLE="white-space: hidden;"><button onclick="show('#name'); show('#otherpeople'); show('#perform'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); show('perform'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials'); hide('#perform'); survey.attending = 'no'">No.</button>
-                        </div>
+                
+                <div class="question" id="attending">
+                    <div width="60%">Are you attending Alvoid?</div>
+                    <div width="40%" STYLE="white-space: hidden;"><button onclick="show('#name'); show('#otherpeople'); show('#perform'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); show('perform'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials'); hide('#perform'); survey.attending = 'no'">No.</button>
                     </div>
-                    <div class="hidden question" id="goodbye"><div colspan="2">Oh well. We hope to see you next year!</div></tr>
-                    <div class="hidden question" id="name">
-                        <div>What is your name?</div>
-                        <div><input type="text" placeholder="Joseph McDiggerson" onchange=""></div>
-                    </div>
-                    <div class="hidden question" id="otherpeople">
-                        <div>How many other people are you bringing?</div>
-                        <div><input type="number" value="0" onchange=""></div>
-                    </div>
-                    <div class="hidden question" id="perform">
-                        <div>Do you want to/ are you going to perform?</div>
-                        <div><button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials');">Yes!</button><button onclick="hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials');">No.</button></div>
-                    </div>
-                    <div class="hidden question" id="artistname">
-                        <div>What is your artist's name?</div>
-                        <div><input type="text" placeholder="100 gecs" onchange=""></div>
-                    </div>
-                    <div class="hidden question" id="from">
-                        <div>Where are you from?</div>
-                        <div><input type="text" placeholder="Portland, OR" onchange=""></div>
-                    </div>
-                    <div class="hidden question" id="describemusic">
-                        <div>How would you describe your music?</div>
-                        <div><input type="text" placeholder="A symphonic clusterfuck" onchange=""></div>
-                    </div>
-                    <div class="hidden question" id="socials">
-                        <div>Please link your socials and streaming platforms:</div>
-                        <div><input type="text" placeholder="please link as many as you like" onchange=""></div>
-                    </div>
-                </table>
+                </div>
+                <div class="hidden question" id="goodbye"><div colspan="2">Oh well. We hope to see you next year!</div></tr>
+                <div class="hidden question" id="name">
+                    <div>What is your name?</div>
+                    <div><input type="text" placeholder="Joseph McDiggerson" onchange=""></div>
+                </div>
+                <div class="hidden question" id="otherpeople">
+                    <div>How many other people are you bringing?</div>
+                    <div><input type="number" value="0" onchange=""></div>
+                </div>
+                <div class="hidden question" id="perform">
+                    <div>Do you want to/ are you going to perform?</div>
+                    <div><button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials');">Yes!</button><button onclick="hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials');">No.</button></div>
+                </div>
+                <div class="hidden question" id="artistname">
+                    <div>What is your artist's name?</div>
+                    <div><input type="text" placeholder="100 gecs" onchange=""></div>
+                </div>
+                <div class="hidden question" id="from">
+                    <div>Where are you from?</div>
+                    <div><input type="text" placeholder="Portland, OR" onchange=""></div>
+                </div>
+                <div class="hidden question" id="describemusic">
+                    <div>How would you describe your music?</div>
+                    <div><input type="text" placeholder="A symphonic clusterfuck" onchange=""></div>
+                </div>
+                <div class="hidden question" id="socials">
+                    <div>Please link your socials and streaming platforms:</div>
+                    <div><input type="text" placeholder="please link as many as you like" onchange=""></div>
+                </div>
 
                 <!-- <p class="hidden">&nbsp; -->
                     <!-- <div>How many other people are you bringing?&nbsp;<input type="text"></div>
