@@ -221,7 +221,9 @@
                     <div>Are you attending Alvoid?</div>
                     <div><button onclick="show('#name'); show('#otherpeople'); show('#perform'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); show('perform'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials'); hide('#perform'); survey.attending = 'no'">No.</button></div>
                 </div>
-                <div class="hidden question" id="goodbye"><div colspan="2">Oh well. We hope to see you next year!</div></tr>
+                <div class="hidden question" id="goodbye">
+                    <div>Oh well. We hope to see you next year!</div>
+                </div>
                 <div class="hidden question" id="name">
                     <div>What is your name?</div>
                     <div><input type="text" placeholder="Joseph McDiggerson" onchange=""></div>
