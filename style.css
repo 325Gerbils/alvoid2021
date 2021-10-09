@@ -380,7 +380,7 @@ footer p a {
         padding: 15px 0;
     }
     main div table tr td {
-        width: 100%;
+        width: 100% !important;
     }
     footer {
         padding: 25px;
