@@ -248,6 +248,10 @@ input[type=text] {
     margin-bottom: 10px;
 }
 
+.question div {
+    margin-bottom: 5px;
+}
+
 .question button {
     display: inline-block;
     padding: 5px 12px;
