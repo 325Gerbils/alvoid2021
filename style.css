@@ -379,10 +379,10 @@ footer p a {
     main div section {
         padding: 15px 0;
     }
+    main div table tr td {
+        width: 100%;
+    }
     footer {
         padding: 25px;
-    }
-    table td {
-        width: 100%;
     }
 }
