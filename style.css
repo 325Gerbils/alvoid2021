@@ -253,7 +253,7 @@ input[type=text] {
     display: none;
 }
 
-.question div {
+.survey .question div {
     margin-bottom: 5px;
 }
 
