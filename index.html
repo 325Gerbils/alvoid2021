@@ -20,7 +20,7 @@
         <p>Around 70 people are planning on going to Alvoid this year!</p>
         <br>
         <div>
-            <button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials'); document.querySelector('.survey').scrollIntoView()">I would like to
+            <button onclick="document.querySelector('.survey').scrollIntoView()">I would like to
                 attend!</button>
             <!-- <button onclick="window.location.href='artists.html'">See artists and sets</button> -->
         </div>
@@ -72,9 +72,9 @@
                     </div>
                 </p>
                 <br>
-                <button onclick="window.location.href='https://www.surveymonkey.com/r/8LRD3BZ'">I would like to
+                <button onclick="hide('#goodbye'); document.querySelector('.survey').scrollIntoView()">I would like to
                     attend!</button>
-                <button onclick="window.location.href='https://www.surveymonkey.com/r/Y5Q53KM'">I would like to
+                <button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials'); hide('#goodbye'); document.querySelector('.survey').scrollIntoView()">I would like to
                     perform!</button>
             </details>
             <details open>
