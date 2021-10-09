@@ -246,6 +246,11 @@ input[type=text] {
     margin: 25px 0;
     font-size: 1.2em;
     margin-bottom: 10px;
+    display: block;
+}
+
+.survey .question.hidden {
+    display: none;
 }
 
 .question div {
