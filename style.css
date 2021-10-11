@@ -136,7 +136,7 @@ main details div.artists {
 }
 
 main details div.artists div {
-    width: 100%;
+    width: 100% !important;
 }
 
 main details div.artists div p span {
