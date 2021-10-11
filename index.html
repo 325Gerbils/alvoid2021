@@ -417,7 +417,7 @@
                     show('#thanks')
                     console.log(`POSTing survey ${survey} to localhost/respond....`)
 
-                    fetch('http://34.127.111.151/respond', {
+                    fetch('https://34.127.111.151/respond', {
                         mode: 'no-cors',
                         method: 'POST',
                         body: JSON.stringify(survey)
@@ -430,7 +430,7 @@
                 <p>Festival expenses: estimated $1,600</p>
                 <p>Suggested donation: $30-40</p>
                 <br>
-                <button class="cashapp" onclick="alert('todo: cashapp outbound');">Donate with Cashapp</button>
+                <button class="cashapp" onclick="window.location.href = 'https://cash.app/$AlvoidFestival/35.00';">Donate with Cashapp</button>
             </section>
             <br>
             <section>
