@@ -136,7 +136,9 @@ main details div.artists {
 }
 
 main details div.artists div {
-    width: 90%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 main details div.artists div p span {
@@ -432,7 +434,6 @@ footer p a {
     }
     main details div.artists {
         grid-template-columns: 1fr;
-        margin: 0;
     }
     main div section {
         padding: 15px 0;
