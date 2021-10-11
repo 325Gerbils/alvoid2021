@@ -269,7 +269,8 @@
                 <div class="hidden question" id="name">
                     <div>What is your name?</div>
                     <div><input type="text" placeholder="Joseph McDiggerson" onchange="
-                        survey.Answers['What is your name?'] = this.value"></div>
+                        survey.Answers['What is your name?'] = this.value;
+                        survey.Name = this.value;"></div>
                 </div>
                 <div class="hidden question" id="otherpeople">
                     <div>How many other people are you bringing?</div>                                                            
