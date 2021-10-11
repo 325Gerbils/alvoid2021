@@ -137,7 +137,7 @@ main details div.artists {
 
 main details div.artists div {
     width: 100%;
-    margin-left: -15px;
+    margin-left: 0;
     padding: 0;
 }
 
