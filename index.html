@@ -197,7 +197,7 @@
                 Most of the alvord does fill with water so dumping water is less of a problem, please take it to the edge of playa and away from camp.</p>
                 <p><b>Bathrooms:</b>
                 We will not providing porta pots. There is a bathroom at the entrence, as well as at the hot springs if you pay. Our suggestion would be to bring any portable toilet system you may have. When you need to go, take a car full of people who also need to go. If you need to pee, going to the edge of playa is also acceptable. 
-                At burning man I used a large container at night, which would be taken and dumped at the bathroom in the morning. It's gross, but increadibly helpful.</p>
+                At burning man I used a large container at night, which would be taken and dumped at the bathroom in the morning. It's gross, but incredibly helpful.</p>
             </details>
             <details open>
                 <summary>How do I get there?</summary>
@@ -290,6 +290,9 @@
                 </div>
                 <div class="hidden question" id="goodbye">
                     <div>Oh well. We hope to see you next year!</div>
+                </div>
+                <div class="hidden question" id="thanks">
+                    <div>Thanks for your response! We're excited to see you at Alvoid!</div>
                 </div>
                 <div class="hidden question" id="name">
                     <div>What is your name?</div>
@@ -401,9 +404,20 @@
                     document.querySelectorAll('input[type=\'text\']').forEach(function(e) {
                         e.value = '';
                     });
+                    hide('#otherpeople');
+                    hide('#name');
+                    hide('#artistname');
+                    hide('#from');
+                    hide('#describemusic');
+                    hide('#socials');
+                    hide('#perform');
+                    hide('#transportation');
+                    hide('#infrastructure');
+                    hide('#submit');
+                    show('#thanks')
                     console.log(`POSTing survey ${survey} to localhost/respond....`)
 
-                    fetch('http://localhost/respond', {
+                    fetch('http://34.127.111.151/respond', {
                         mode: 'no-cors',
                         method: 'POST',
                         body: JSON.stringify(survey)
