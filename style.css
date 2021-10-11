@@ -414,6 +414,10 @@ footer p a {
         height: 400px;
         margin: 15px 0;
     }
+    main details div.artists {
+        grid-template-columns: repeat(autofit, 1fr);
+        grid-gap: 25px;
+    }
     main div section {
         padding: 15px 0;
     }
