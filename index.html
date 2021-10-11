@@ -388,6 +388,11 @@
                     }
 
                     console.log(survey);
+                    // clear all text boxes
+                    document.querySelectorAll('input[type=\'text\']').forEach(function(e) {
+                        e.value = '';
+                    });
+
                     fetch('http://localhost/respond', {
                         mode: 'no-cors',
                         method: 'POST',
