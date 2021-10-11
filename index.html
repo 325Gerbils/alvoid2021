@@ -392,6 +392,7 @@
                     document.querySelectorAll('input[type=\'text\']').forEach(function(e) {
                         e.value = '';
                     });
+                    console.log(`POSTing survey ${survey} to localhost/respond....`)
 
                     fetch('http://localhost/respond', {
                         mode: 'no-cors',
