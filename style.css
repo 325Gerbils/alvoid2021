@@ -302,7 +302,7 @@ input[type=text] {
     background-color: rgba(255, 0, 0, 0.3);
 }
 
-button#submit {
+#submit button {
     padding: 10px 25px;
     border: 2px solid purple;
     border-radius: 25px;
@@ -312,9 +312,10 @@ button#submit {
     transition: background-color 0.2s;
     cursor: pointer;
     margin: 10px;
+    float: right;
 }
 
-button#submit:hover {
+#submit button:hover {
     background-color: rgba(255, 0, 255, 0.5);
 }
 
