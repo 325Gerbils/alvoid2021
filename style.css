@@ -233,6 +233,11 @@ input[type=text] {
     width: 100%;
 }
 
+main div details li {
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
 .survey {
     padding: 25px;
     border: 1px solid #888;
