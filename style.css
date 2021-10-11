@@ -326,14 +326,13 @@ main div details li {
 
 .cashapp {
     display: inline-block;
-    padding: 5px 12px;
+    padding: 10px 25px;
     border: 1px solid red;
     background: #fff;
     color: red;
     cursor: pointer;
-    font-size: 1.05em;
-    width: 100%;
-    border-radius: 5px;
+    font-size: 1.2em;
+    border-radius: 5000px;
     transition: 0.2s background-color;
 }
 

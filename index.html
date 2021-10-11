@@ -350,6 +350,9 @@
                 <div class="hidden question" id="submit">
                     <div><button onclick="
                     // validate survey...
+                    if (survey.Answers['Are you attending Alvoid?'] == '') {
+                        // complain
+                    }
                     console.log(survey);
                     fetch('http://localhost/respond', {
                         mode: 'no-cors',
