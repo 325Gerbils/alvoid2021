@@ -207,64 +207,119 @@
                         element.classList.add('hidden')
                     })
                 }
+                questions = ["Are you attending Alvoid?", 
+							"What is your name?",
+							"How many other people are you bringing?",
+							"Do you want to/ are you going to perform?",
+							"What is your artist's name?",
+							"Where are you from?",
+							"How would you describe your music?",
+							"Please link your socials and streaming platforms",
+							"Can you provide (or need) transportation?",
+							"What infrastructure/useful items can you bring?"]                ]
                 survey = {
-                    attending: "maybe",
+                    Name: "",
+                    Answers: {},
                 }
+                // "Alvoid 1": {
+                //     "Name": "Alvoid 1",
+                //     "Answers": {
+                //         "Can you bring a tent?": "I can bring a tent.",
+                //         "Can you bring water?": "I can bring water.",
+                //         "Can you find a light?": "I can find a light."
+                //     }
+                // },
             </script>
             <br>   
             <section class="survey">
                 
                 <div class="question" id="attending">
                     <div>Are you attending Alvoid?</div>
-                    <div><button onclick="show('#name'); show('#otherpeople'); show('#submit'); show('#perform'); show('#transportation'); show('#infrastructure'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#submit'); show('#otherpeople'); show('perform'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials'); hide('#perform'); hide('#transportation'); hide('#infrastructure'); hide('#submit'); survey.attending = 'no'">No.</button></div>
+                    <div><button onclick="
+                        show('#name');
+                        show('#otherpeople');
+                        show('#submit');
+                        show('#perform');
+                        show('#transportation');
+                        show('#infrastructure');
+                        hide('#goodbye');
+                        survey.Answers['Are you attending Alvoid?'] = 'yes'">Yes!</button><button onclick="
+                        show('#name');
+                        show('#submit');
+                        show('#otherpeople');
+                        show('perform');
+                        hide('#goodbye');
+                        survey.Answers['Are you attending Alvoid?'] = 'maybe'">Maybe?</button><button onclick="
+                        show('#goodbye');
+                        hide('#otherpeople');
+                        hide('#name');
+                        hide('#artistname');
+                        hide('#from');
+                        hide('#describemusic');
+                        hide('#socials');
+                        hide('#perform');
+                        hide('#transportation');
+                        hide('#infrastructure');
+                        hide('#submit');
+                        survey.Answers['Are you attending Alvoid?'] = 'no'">No.</button></div>
                 </div>
                 <div class="hidden question" id="goodbye">
                     <div>Oh well. We hope to see you next year!</div>
                 </div>
                 <div class="hidden question" id="name">
                     <div>What is your name?</div>
-                    <div><input type="text" placeholder="Joseph McDiggerson" onchange=""></div>
+                    <div><input type="text" placeholder="Joseph McDiggerson" onchange="survey.Answers['What is your name?'] = this.value"></div>
                 </div>
                 <div class="hidden question" id="otherpeople">
                     <div>How many other people are you bringing?</div>                                                            
-                    <div><input type="number" value="0" onchange=""></div>
+                    <div><input type="number" value="0" onchange="survey.Answers['How many other people are you bringing?'] = this.value"></div>
                 </div>
                 <div class="hidden question" id="perform">
                     <div>Do you want to/ are you going to perform?</div>
-                    <div><button onclick="show('#artistname'); show('#from'); show('#describemusic'); show('#socials');">Yes!</button><button onclick="hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials');">No.</button></div>
+                    <div><button onclick="
+                    show('#artistname');
+                    show('#from');
+                    show('#describemusic');
+                    show('#socials');
+                    survey.Answers['Do you want to/ are you going to perform?'] = 'yes'">Yes!</button><button onclick="
+                    hide('#artistname');
+                    hide('#from');
+                    hide('#describemusic');
+                    hide('#socials');
+                    survey.Answers['Do you want to/ are you going to perform?'] = 'no'">No.</button></div>
                 </div>
                 <div class="hidden question" id="artistname">
                     <div>What is your artist's name?</div>
-                    <div><input type="text" placeholder="100 gecs" onchange=""></div>
+                    <div><input type="text" placeholder="100 gecs" onchange="survey.Answers['What is your artist\'s name?'] = this.value"></div>
                 </div>
                 <div class="hidden question" id="from">
                     <div>Where are you from?</div>
-                    <div><input type="text" placeholder="Portland, OR" onchange=""></div>
+                    <div><input type="text" placeholder="Portland, OR" onchange="survey.Answers['Where are you from?'] = this.value"></div>
                 </div>
                 <div class="hidden question" id="describemusic">
                     <div>How would you describe your music?</div>
-                    <div><input type="text" placeholder="A symphonic clusterfuck" onchange=""></div>
+                    <div><input type="text" placeholder="A symphonic clusterfuck" onchange="survey.Answers['How would you describe your music?'] = this.value"></div>
                 </div>
                 <div class="hidden question" id="socials">
                     <div>Please link your socials and streaming platforms:</div>
-                    <div><input type="text" placeholder="please link as many as you like" onchange=""></div>
+                    <div><input type="text" placeholder="please link as many as you like" onchange="survey.Answers['Please link your socials and streaming platforms'] = this.value"></div>
                 </div>
                 <div class="hidden question" id="transportation">
                     <div>Can you provide (or need) transportation?</div>
-                    <div><input type="text" placeholder="Just driving myself" onchange="show('#email');"></div>
-                </div>
-                
-                <div class="hidden question" id="email">
-                    <div>What is your email?</div>
-                    <div><input type="email" placeholder="alvoidfestival@gmail.com" onchange=""></div>
+                    <div><input type="text" placeholder="Just driving myself" onchange="survey.Answers['Can you provide (or need) transportation?'] = this.value"></div>?'] = this.value"></div>
                 </div>
                 <div class="hidden question" id="infrastructure">
                     <div>What infrastructure/useful items can you bring?</div>
-                    <div><input type="text" placeholder="generator, sound system, shade structures &amp; chairs" onchange=""></div>
+                    <div><input type="text" placeholder="generator, sound system, shade structures &amp; chairs" onchange="survey.Answers['What infrastructure/useful items can you bring?'] = this.value"></div>
                 </div>
 
                 <div class="hidden question" id="submit">
-                    <div><button onclick="">Submit survey!</button></div>
+                    <div><button onclick="
+                    // validate survey...
+                    fetch('localhost', {
+                        method: 'POST',
+                        body: JSON.stringify(survey)
+                    }).then(console.log)">Submit survey!</button></div>
                 </div>
 
             </section>
