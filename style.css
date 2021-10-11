@@ -238,6 +238,7 @@ input[type=text] {
     border: 1px solid #888;
     border-radius: 15px;
     margin: 25px 0;
+    background: #f8f8f8;
 }
 
 .survey .question {
