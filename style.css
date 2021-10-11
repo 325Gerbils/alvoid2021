@@ -240,10 +240,6 @@ input[type=text] {
     margin: 25px 0;
 }
 
-.survey div {
-    width: 100%;
-}
-
 .survey .question {
     /* border: 1px solid #ccc; */
     /* border-radius: 5px; */
@@ -346,6 +342,9 @@ footer p a {
     }
     header button {
         font-size: 1.25em;
+    }
+    .survey div {
+        width: 100%;
     }
 }
 
