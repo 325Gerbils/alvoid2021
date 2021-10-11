@@ -350,9 +350,43 @@
                 <div class="hidden question" id="submit">
                     <div><button onclick="
                     // validate survey...
-                    if (survey.Answers['Are you attending Alvoid?'] == '') {
-                        // complain
+                    if (survey.Answers['What is your name?'] == '') {
+                        e.preventDefault();
+                        alert('Please enter your name.');
                     }
+                    if (survey.Answers['How many other people are you bringing?'] == '') {
+                        e.preventDefault();
+                        alert('Please enter how many other people are you bringing.');
+                    }
+                    if (survey.Answers['Do you want to/ are you going to perform?'] == '') {
+                        e.preventDefault();
+                        alert('Please enter whether you want to or are going to perform.');
+                    }
+                    if (survey.Answers['What is your artist\'s name?'] == '' && survey.Answers['Do you want to/ are you going to perform?'] == 'yes') {
+                        e.preventDefault();
+                        alert('Please enter your artist\'s name.');
+                    }
+                    if (survey.Answers['Where are you from?'] == '' && survey.Answers['Do you want to/ are you going to perform?'] == 'yes') {
+                        e.preventDefault();
+                        alert('Please enter where you are from.');
+                    }
+                    if (survey.Answers['How would you describe your music?'] == '' && survey.Answers['Do you want to/ are you going to perform?'] == 'yes') {
+                        e.preventDefault();
+                        alert('Please enter how you describe your music.');
+                    }
+                    if (survey.Answers['Please link your socials and streaming platforms'] == '' && survey.Answers['Do you want to/ are you going to perform?'] == 'yes') {
+                        e.preventDefault();
+                        alert('Please enter your socials and streaming platforms.');
+                    }
+                    if (survey.Answers['Can you provide (or need) transportation?'] == '') {
+                        e.preventDefault();
+                        alert('Please enter whether you can provide or need transportation.');
+                    }
+                    if (survey.Answers['What infrastructure/useful items can you bring?'] == '') {
+                        e.preventDefault();
+                        alert('Please enter what infrastructure/useful items you can bring.');
+                    }
+
                     console.log(survey);
                     fetch('http://localhost/respond', {
                         mode: 'no-cors',
