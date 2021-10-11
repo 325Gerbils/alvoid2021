@@ -353,38 +353,47 @@
                     if (survey.Answers['What is your name?'] == '') {
                         e.preventDefault();
                         alert('Please enter your name.');
+                        return;
                     }
                     if (survey.Answers['How many other people are you bringing?'] == '') {
                         e.preventDefault();
                         alert('Please enter how many other people are you bringing.');
+                        return;
                     }
                     if (survey.Answers['Do you want to/ are you going to perform?'] == '') {
                         e.preventDefault();
                         alert('Please enter whether you want to or are going to perform.');
+                        return;
                     }
                     if (survey.Answers['What is your artist\'s name?'] == '' && survey.Answers['Do you want to/ are you going to perform?'] == 'yes') {
                         e.preventDefault();
                         alert('Please enter your artist\'s name.');
+                        return;
                     }
                     if (survey.Answers['Where are you from?'] == '' && survey.Answers['Do you want to/ are you going to perform?'] == 'yes') {
                         e.preventDefault();
                         alert('Please enter where you are from.');
+                        return;
                     }
                     if (survey.Answers['How would you describe your music?'] == '' && survey.Answers['Do you want to/ are you going to perform?'] == 'yes') {
                         e.preventDefault();
                         alert('Please enter how you describe your music.');
+                        return;
                     }
                     if (survey.Answers['Please link your socials and streaming platforms'] == '' && survey.Answers['Do you want to/ are you going to perform?'] == 'yes') {
                         e.preventDefault();
                         alert('Please enter your socials and streaming platforms.');
+                        return;
                     }
                     if (survey.Answers['Can you provide (or need) transportation?'] == '') {
                         e.preventDefault();
                         alert('Please enter whether you can provide or need transportation.');
+                        return;
                     }
                     if (survey.Answers['What infrastructure/useful items can you bring?'] == '') {
                         e.preventDefault();
                         alert('Please enter what infrastructure/useful items you can bring.');
+                        return;
                     }
 
                     console.log(survey);
