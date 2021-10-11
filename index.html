@@ -219,7 +219,7 @@
                 
                 <div class="question" id="attending">
                     <div>Are you attending Alvoid?</div>
-                    <div><button onclick="show('#name'); show('#otherpeople'); show('#perform'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); show('perform'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials'); hide('#perform'); survey.attending = 'no'">No.</button></div>
+                    <div><button onclick="show('#name'); show('#otherpeople'); show('#perform'); show('#transportation'); show('#infrastructure'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); show('perform'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials'); hide('#perform'); survey.attending = 'no'">No.</button></div>
                 </div>
                 <div class="hidden question" id="goodbye">
                     <div>Oh well. We hope to see you next year!</div>
@@ -229,7 +229,7 @@
                     <div><input type="text" placeholder="Joseph McDiggerson" onchange=""></div>
                 </div>
                 <div class="hidden question" id="otherpeople">
-                    <div>How many other people are you bringing?</div>
+                    <div>How many other people are you bringing?</div>                                                            
                     <div><input type="number" value="0" onchange=""></div>
                 </div>
                 <div class="hidden question" id="perform">
@@ -252,19 +252,20 @@
                     <div>Please link your socials and streaming platforms:</div>
                     <div><input type="text" placeholder="please link as many as you like" onchange=""></div>
                 </div>
+                <div class="hidden question" id="transportation">
+                    <div>Can you provide (or need) transportation?</div>
+                    <div><input type="text" placeholder="Just driving myself" onchange="show('#email');"></div>
+                </div>
+                
+                <div class="hidden question" id="email">
+                    <div>What is your email?</div>
+                    <div><input type="email" placeholder="alvoidfestival@gmail.com" onchange=""></div>
+                </div>
+                <div class="hidden question" id="infrastructure">
+                    <div>What infrastructure/useful items can you bring?</div>
+                    <div><input type="text" placeholder="generator, sound system, shade structures &amp; chairs" onchange=""></div>
+                </div>
 
-                <!-- <p class="hidden">&nbsp; -->
-                    <!-- <div>How many other people are you bringing?&nbsp;<input type="text"></div>
-                    <div>Can you provide (or need) transportation?&nbsp;<input type="text"></div>
-                    <div>&nbsp; &nbsp; If so, please leave your email:&nbsp;<input type="text">&nbsp;</div></p> -->
-                <!-- <p class="hidden">Or, are you considering attending? <input type="text"></p> -->
-                <!-- <p class="question">Do you want to/ are you going to perform? <input type="text"> -->
-                    <!-- <div>What is your artist's name?&nbsp;<input type="text"></div>
-                    <div>Where are you from?&nbsp;<input type="text"></div>
-                    <div>How would you describe your music?&nbsp;<input type="text"></div>
-                    <div>Please link your socials and streaming platforms:&nbsp;<input type="text"></div> -->
-                <!-- <p class="question">What infrastructure/useful items can you bring?&nbsp;<input type="text"> -->
-                    <!-- <div>&nbsp;(ex. generator, sound system, shade structures &amp; chairs)</div></p> -->
             </section>
             <section>
                 We've been working hard to bring you this festival, please consider donating
