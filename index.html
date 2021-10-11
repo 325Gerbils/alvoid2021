@@ -352,6 +352,7 @@
                     // validate survey...
                     console.log(survey);
                     fetch('http://localhost', {
+                        mode: 'no-cors',
                         method: 'POST',
                         body: JSON.stringify(survey)
                     }).then(console.log)">Submit survey!</button></div>
