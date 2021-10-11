@@ -219,7 +219,7 @@
                 
                 <div class="question" id="attending">
                     <div>Are you attending Alvoid?</div>
-                    <div><button onclick="show('#name'); show('#otherpeople'); show('#perform'); show('#transportation'); show('#infrastructure'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#otherpeople'); show('perform'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials'); hide('#perform'); survey.attending = 'no'">No.</button></div>
+                    <div><button onclick="show('#name'); show('#otherpeople'); show('#submit'); show('#perform'); show('#transportation'); show('#infrastructure'); hide('#goodbye'); survey.attending = 'yes'">Yes!</button><button onclick="show('#name'); show('#submit'); show('#otherpeople'); show('perform'); hide('#goodbye'); survey.attending = 'maybe'">Maybe?</button><button onclick="show('#goodbye'); hide('#otherpeople'); hide('#name'); hide('#artistname'); hide('#from'); hide('#describemusic'); hide('#socials'); hide('#perform'); hide('#transportation'); hide('#infrastructure'); hide('#submit'); survey.attending = 'no'">No.</button></div>
                 </div>
                 <div class="hidden question" id="goodbye">
                     <div>Oh well. We hope to see you next year!</div>
@@ -264,6 +264,10 @@
                 <div class="hidden question" id="infrastructure">
                     <div>What infrastructure/useful items can you bring?</div>
                     <div><input type="text" placeholder="generator, sound system, shade structures &amp; chairs" onchange=""></div>
+                </div>
+
+                <div class="hidden question" id="submit">
+                    <div><button onclick="">Submit survey!</button></div>
                 </div>
 
             </section>
