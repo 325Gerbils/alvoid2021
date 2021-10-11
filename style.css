@@ -432,6 +432,7 @@ footer p a {
     }
     main details div.artists {
         grid-template-columns: 1fr;
+        margin: 0;
     }
     main div section {
         padding: 15px 0;
